@@ -17,12 +17,7 @@ client.on('message', msg => {
   });
 
 
-client.login("process.env.TOKEN")
-.then(result=>{
-    console.log("Connexion reussie 1", result);   
-}).catch(error => {
-    console.log("Erreur lors du login... Message :",error);    
-});
+client.login("process.env.TOKEN");
 
 client.on('message', message => {
     if (message.content === 'what is my avatar') {
