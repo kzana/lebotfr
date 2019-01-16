@@ -6,10 +6,6 @@ const prefix = "?";
 
 const { Client, Attachment } = require('discord.js');
 
-client.on('ready', function() {
-    console.log("I'm ready !");
-});
-
 client.on('message', msg => {
     const guildTag = msg.channel.type === 'text' ? `[${msg.guild.name}]` : '[DM]';
     const channelTag = msg.channel.type === 'text' ? `[#${msg.channel.name}]` : '';
