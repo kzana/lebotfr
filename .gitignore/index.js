@@ -17,7 +17,7 @@ client.on('message', msg => {
   });
 
 
-client.login('NTM0ODE0Mzk2MTc0NTY1Mzc2.Dx_ESw.KYfdBEBrAL_GOQsiM8hk5LV1xNM')
+client.login("process.env.TOKEN")
 .then(result=>{
     console.log("Connexion reussie 1", result);   
 }).catch(error => {
